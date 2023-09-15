@@ -108,7 +108,40 @@ rel='stylesheet' type='text/css'>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tbody>
 
+	<tr onmouseout="hnerf_stop()" onmouseover="hnerf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/PromptAid.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function hnerf_start() {
+                  document.getElementById('hnerf_image').style.opacity = "1";
+                }
 
+                function hnerf_stop() {
+                  document.getElementById('hnerf_image').style.opacity = "0";
+                }
+                hnerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="">
+                <papertitle>Characterizing Large Language Models as Rationalizers of Knowledge-intensive Tasks</papertitle>
+              </a>
+              <br>
+              <strong>Aditi Mishra</strong>,
+              <a href="https://sajjadur.net">Sajjadur Rahman</a>,
+		<a href="">Hannah Kim</a>,
+              <a href="">Kushan Mitra</a>,
+		    <a href="">Estevam Hruschka</a>,
+              <br>
+              <em>In Submission</em>, CHI 2024
+              <br>
+<!--               <a href="https://drive.google.com/file/d/1f7pVxLi1mGcLBVT6I64kBRnmfqqyBabK/view?usp=sharing">[video]</a> -->
+              <p></p>
+              <p>Generating and evaluating the proficiency of LLMs in generating rationales grounded on external knowledge for knowledge intensive tasks.</p>
+            </td>
+          </tr>
 
 	<tr onmouseout="hnerf_stop()" onmouseover="hnerf_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
