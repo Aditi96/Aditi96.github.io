@@ -44,36 +44,41 @@ rel='stylesheet' type='text/css'>
 
 
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Recent News</heading>
             </td>
           </tr>
         </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tbody>
-
-          <tr onmouseout="hnerf_stop()" onmouseover="hnerf_start()">
-            <td style="padding:20px;width:75%;vertical-align:middle">
-		    <p><b>[Jan 2024]</b> I have started as a Data Science Intern at <b>Stanford Healthcare, Palo Alto</b>. I am working on
-	leveraging LLMs to summarize patient health records and ways to evaluate generated summaries.</p>
-		    <br>
-		<p><b>[May 2023]</b> I have started as a Summer Research Intern at <b>Megagon Labs, Mountain View</b>. I am working on
-	leveraging LLMs to rationalize knowledge augmented model's decisions.</p>
-              <br>
-                <p><b>[Sept 2022]</b> I have been awarded the <b>Graduate Travel Fellowship Award by ASU</b>.</p>
-              <br>
-                <p><b>[March 2022]</b> I have been awarded the <b>SCAI Doctoral Fellowship by ASU</b>.</p>
-              <br>
-              <p><b>[Feb 2022]</b> Two of my works - <b>Why? Why not? When? Visual Explanations of Agent Behavior in Reinforcement Learning</b> and
-              <b>News Kaleidoscope: Visual Investigation of Coverage Diversity in News Event Reporting</b> has been accepted in this years PacificVis held in Tsukuba, Japan. </p>
-		    <br>
-              <p><b>[May 2020]</b> I started my summer internship at <b>Los Alamos National Lab</b> as a research intern.</p>
-              <br>
-
-            </td>
-          </tr>
+        <div style="width:100%;height:400px;overflow:auto;border:1px solid #ddd;border-radius:8px;margin-right:auto;margin-left:auto;">
+  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  </table>
+  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tbody>
+      <tr onmouseout="hnerf_stop()" onmouseover="hnerf_start()">
+        <td style="padding:20px;width:75%;vertical-align:middle">
+           <p><b>[May 2024]</b> My internship work done in Megagon Labs under Dr Sajjadur Rahman <b>Characterizing Large Language Models as Rationalizers of Knowledge-intensive Tasks</b> has been accepted to this ACL Findings.</p>.
+          <br>
+          <p><b>[April 2024]</b> On <b>CLIP's ability to identify fake images at large scale: Why are they fake?</b> has been accepted to this GenAICHI workshop held in Honolulu, Hawaii.</p>.
+          <br>
+          <p><b>[Jan 2024]</b> I have started as a Data Science Intern at <b>Stanford Healthcare, Palo Alto</b>. I am working on leveraging LLMs to summarize patient health records and ways to evaluate generated summaries.</p>
+          <br>
+          <p><b>[May 2023]</b> I have started as a Summer Research Intern at <b>Megagon Labs, Mountain View</b>. I am working on leveraging LLMs to rationalize knowledge augmented model's decisions.</p>
+          <br>
+          <p><b>[Sept 2022]</b> I have been awarded the <b>Graduate Travel Fellowship Award by ASU</b>.</p>
+          <br>
+          <p><b>[March 2022]</b> I have been awarded the <b>SCAI Doctoral Fellowship by ASU</b>.</p>
+          <br>
+          <p><b>[Feb 2022]</b> Two of my works - <b>Why? Why not? When? Visual Explanations of Agent Behavior in Reinforcement Learning</b> and <b>News Kaleidoscope: Visual Investigation of Coverage Diversity in News Event Reporting</b> has been accepted in this year's PacificVis held in Tsukuba, Japan.</p>
+          <br>
+          <p><b>[May 2020]</b> I started my summer internship at <b>Los Alamos National Lab</b> as a research intern.</p>
+          <br>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 
 
@@ -115,6 +120,41 @@ rel='stylesheet' type='text/css'>
 	<tr onmouseout="hnerf_stop()" onmouseover="hnerf_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
+                <img src='images/KGAM.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function hnerf_start() {
+                  document.getElementById('hnerf_image').style.opacity = "1";
+                }
+
+                function hnerf_stop() {
+                  document.getElementById('hnerf_image').style.opacity = "0";
+                }
+                hnerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="">
+                <papertitle>Characterizing Large Language Models as Rationalizers of Knowledge-intensive Tasks</papertitle>
+              </a>
+              <br>
+              <strong>Aditi Mishra</strong>,
+              <a href="https://sajjadur.net">Sajjadur Rahman</a>,
+		<a href="">Hannah Kim</a>,
+              <a href="">Kushan Mitra</a>,
+		    <a href="">Estevam Hruschka</a>,
+              <br>
+              <em>In Submission</em>, ACL 2024
+              <br>
+<!--               <a href="https://drive.google.com/file/d/1f7pVxLi1mGcLBVT6I64kBRnmfqqyBabK/view?usp=sharing">[video]</a> -->
+              <p></p>
+              <p>Generating and evaluating the proficiency of LLMs in generating rationales grounded on external knowledge for knowledge intensive tasks.</p>
+            </td>
+          </tr>
+		  
+	<tr onmouseout="hnerf_stop()" onmouseover="hnerf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
                 <img src='images/ASAP.png' width="160">
               </div>
               <script type="text/javascript">
@@ -149,40 +189,7 @@ rel='stylesheet' type='text/css'>
           </tr>
 
 
-	<tr onmouseout="hnerf_stop()" onmouseover="hnerf_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <img src='images/KGAM.png' width="160">
-              </div>
-              <script type="text/javascript">
-                function hnerf_start() {
-                  document.getElementById('hnerf_image').style.opacity = "1";
-                }
-
-                function hnerf_stop() {
-                  document.getElementById('hnerf_image').style.opacity = "0";
-                }
-                hnerf_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="">
-                <papertitle>Characterizing Large Language Models as Rationalizers of Knowledge-intensive Tasks</papertitle>
-              </a>
-              <br>
-              <strong>Aditi Mishra</strong>,
-              <a href="https://sajjadur.net">Sajjadur Rahman</a>,
-		<a href="">Hannah Kim</a>,
-              <a href="">Kushan Mitra</a>,
-		    <a href="">Estevam Hruschka</a>,
-              <br>
-              <em>In Submission</em>, ACL 2024
-              <br>
-<!--               <a href="https://drive.google.com/file/d/1f7pVxLi1mGcLBVT6I64kBRnmfqqyBabK/view?usp=sharing">[video]</a> -->
-              <p></p>
-              <p>Generating and evaluating the proficiency of LLMs in generating rationales grounded on external knowledge for knowledge intensive tasks.</p>
-            </td>
-          </tr>
+	
 
 	<tr onmouseout="hnerf_stop()" onmouseover="hnerf_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
