@@ -124,6 +124,41 @@ rel='stylesheet' type='text/css'>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tbody>
 
+          	<tr onmouseout="hnerf_stop()" onmouseover="hnerf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img src='images/PromptAid.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function hnerf_start() {
+                  document.getElementById('hnerf_image').style.opacity = "1";
+                }
+
+                function hnerf_stop() {
+                  document.getElementById('hnerf_image').style.opacity = "0";
+                }
+                hnerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/pdf/2304.01964">
+                <papertitle>PromptAid: Prompt Exploration, Perturbation, Testing and Iteration using Visual Analytics for Large Language Models</papertitle>
+              </a>
+              <br>
+              <strong>Aditi Mishra</strong>,
+              <a href="https://usoni1.github.io/">Utkarsh Soni</a>,
+		<a href="">Anjana Arunkumar</a>,
+              <a href="https://jakobwong.github.io">Jinbin Huang</a>,
+		    <a href="https://www.bckwon.com">Bum-Chul Kwon</a>,
+              <a href="http://chrisbryan.github.io">Chris Bryan</a> <br>
+              <em>IEEE Transactions on Visualization and Computer Graphics</em>, 2025
+              <br>
+<!--               <a href="https://drive.google.com/file/d/1f7pVxLi1mGcLBVT6I64kBRnmfqqyBabK/view?usp=sharing">[video]</a> -->
+              <p></p>
+              <p>Providing a visual analytics interface to aid easier prompting alterations for LMs based on linguistic and contextual recommendations.</p>
+            </td>
+          </tr>
+
            <tr onmouseout="ddp_stop()" onmouseover="ddp_start()">
     <td style="padding:20px;width:25%;vertical-align:middle">
       <div class="one">
@@ -156,6 +191,8 @@ rel='stylesheet' type='text/css'>
       </p>
     </td>
   </tr>
+
+
 
 	<tr onmouseout="hnerf_stop()" onmouseover="hnerf_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
