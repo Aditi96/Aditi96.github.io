@@ -115,30 +115,16 @@
     sel.addRange(range);
   }
 
-  // ---- Theme labels on each card ----
-  pubs.forEach(function (pub) {
-    var p = document.createElement('p');
-    p.className = 'tags';
-    tagsOf(pub).forEach(function (t) {
-      var s = document.createElement('span');
-      s.className = 'tag';
-      s.textContent = THEMES[t] || t;
-      p.appendChild(s);
-    });
-    pub.querySelector('.pub-body').appendChild(p);
-  });
-
   // ---- Filter chips (clicking the active theme again clears it) ----
   var activeTheme = null;
   var themeChips = {};
   Object.keys(THEMES).forEach(function (key) {
-    var n = pubs.filter(function (p) { return tagsOf(p).indexOf(key) !== -1; }).length;
-    if (!n) return;
+    if (!pubs.some(function (p) { return tagsOf(p).indexOf(key) !== -1; })) return;
     var b = document.createElement('button');
     b.type = 'button';
     b.className = 'chip';
     b.setAttribute('aria-pressed', 'false');
-    b.innerHTML = THEMES[key] + '<span class="count">' + n + '</span>';
+    b.textContent = THEMES[key];
     b.addEventListener('click', function () { setTheme(key); });
     filters.appendChild(b);
     themeChips[key] = b;
@@ -159,9 +145,7 @@
       pub.classList.toggle('is-hidden', !ok);
       if (ok) shown++;
     });
-    count.textContent = activeTheme
-      ? 'Showing ' + shown + ' of ' + pubs.length + ' papers · click the theme again to show all'
-      : '';
+    count.textContent = activeTheme ? 'Click the theme again to show all papers' : '';
   }
   apply();
 })();
