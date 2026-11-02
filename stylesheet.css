@@ -129,3 +129,62 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
+table.publications {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+table.publications td {
+  vertical-align: top !important;
+  padding: 20px 12px !important;
+  box-sizing: border-box;
+}
+
+/* Image column */
+table.publications td:first-child {
+  width: 190px !important;
+}
+
+/* Text column */
+table.publications td:last-child {
+  width: auto !important;
+}
+
+/* Remove fixed image container height */
+table.publications .one {
+  width: 160px;
+  height: auto;
+}
+
+/* Consistent image sizing */
+table.publications .one img {
+  display: block;
+  width: 160px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Remove unnecessary spacing above descriptions */
+table.publications td p:empty {
+  display: none;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  table.publications tr {
+    display: flex;
+    flex-direction: column;
+  }
+
+  table.publications td:first-child,
+  table.publications td:last-child {
+    width: 100% !important;
+  }
+
+  table.publications td {
+    padding: 10px 15px !important;
+  }
+}
